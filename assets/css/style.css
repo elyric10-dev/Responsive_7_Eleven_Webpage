@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel:ital,wght@1,700&family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.containerBox {
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerBoxes {
+    width: 100%;
+    height: 100%;
+}
+
+.headerBox {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banneImage {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background-image: url('../image/banner.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.nav {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.nav ul {
+    position: relative;
+    width: 1000px;
+    height: 100%;
+    background-color: white;
+    border: 3px solid #006b41;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav ul li {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav ul li a {
+    position: absolute;
+    text-decoration: none;
+    color: #006b41;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.line1,
+.line2,
+.line3,
+.line4 {
+    position: absolute;
+    bottom: -2px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #006b41;
+    opacity: 0;
+    transition: 0.5s all;
+}
+
+.line1.active,
+.line2.active,
+.line3.active,
+.line4.active {
+    opacity: 1;
+}
+
+.mainBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 1000px;
+}
+
+.mainHead {
+    width: 1000px;
+    height: 350px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mainHead h1 {
+    width: 85%;
+    font-size: 35px;
+}
+
+.mainHead p {
+    width: 70%;
+    font-size: 18px;
+}
+
+.registrationContainer {
+    width: 1500px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registrationFormContainer {
+    position: relative;
+    width: 1000px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.savingsCard {
+    position: absolute;
+    display: flex;
+    left: 0;
+    bottom: 0px;
+    width: 400px;
+    height: 350px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.savingsCard img {
+    background-size: cover;
+}
+
+.theForm {
+    position: absolute;
+    top: 0;
+    width: 600px;
+    height: 680px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formHeader {
+    margin-bottom: 5px;
+    width: 100%;
+    height: 5%;
+}
+
+.formHeader span {
+    font-size: 40px;
+    font-weight: 1000;
+    letter-spacing: 1px;
+    color: #ef2b2f;
+}
+
+.mainFormCard {
+    flex-grow: 5;
+    width: 100%;
+    height: 1000px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fillUpForm {
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+}
+
+.firstData {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 45%;
+}
+
+.firstDetails {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+    font-size: 20px;
+    left: 0;
+    width: 30%;
+    height: 100%;
+}
+
+.firstInput {
+    position: absolute;
+    right: 10%;
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.firstInput .name {
+    position: relative;
+    width: 100%;
+    height: 20%;
+}
+
+.firstInput .email {
+    position: relative;
+    width: 100%;
+    height: 20%;
+}
+
+.firstInput .number {
+    position: relative;
+    width: 100%;
+    height: 20%;
+}
+
+#name,
+#email,
+#number {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 23px;
+    color: #252525;
+    background-color: #e2e2e2;
+    border: none;
+}
+
+.secondData {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 20%;
+}
+
+select {
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+#month {
+    text-align: center;
+}
+
+#day {
+    text-align: center;
+}
+
+#year {
+    text-align: center;
+}
+
+option {
+    text-align: center;
+}
+
+.secondDetails {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+}
+
+.birth,
+.genderTopLabel {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.birth span {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    font-size: 20px;
+}
+
+.genderTopLabel span {
+    position: absolute;
+    bottom: 25px;
+    right: 0px;
+    font-size: 20px;
+}
+
+.secondInput {
+    position: absolute;
+    right: 10%;
+    width: 55%;
+    height: 100%;
+    height: 100%;
+}
+
+.secondInputContainer {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.birthContainer {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    top: 0;
+}
+
+select {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.month,
+.day,
+.year {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 60%;
+    background-color: #d0d0d0;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.dateTriangle {
+    position: absolute;
+    right: 1px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #ef6c00;
+    pointer-events: none;
+}
+
+.gender {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+}
+
+.allGenderContainer {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+
+.genderContainer {
+    width: 120px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+.genderContainer input[type="radio"] {
+    display: none;
+}
+
+.genderCircle {
+    align-self: center;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+}
+
+.genderCircleSmall {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.genderContainer input:checked~.genderCircle .genderCircleSmall {
+    background-color: #ef6c00;
+}
+
+.genderLabel {
+    align-self: center;
+    position: absolute;
+    left: 28px;
+    font-size: 25px;
+}
+
+.thirdData {
+    width: 100%;
+    height: 30%;
+    position: relative;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.agreementContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 50%;
+}
+
+.agreeContainer {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+    gap: 25px;
+}
+
+.checkboxContainer {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    width: 50px;
+    height: 50px;
+}
+
+#agree {
+    display: none;
+}
+
+.agreeCheck {
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: #e1e1e1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkAgree {
+    width: 13px;
+    height: 13px;
+    border-radius: 1.5px;
+    transition: 0.3s;
+}
+
+#agree:checked~.agreeCheck>.checkAgree {
+    background-color: #ef2b2f;
+}
+
+.agreementParag {
+    width: 70%;
+    height: 100%;
+    font-size: 20px;
+}
+
+.submitContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 80%;
+    height: 50%;
+}
+
+.submit {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 70px;
+    background-color: #ef2b2f;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.submit span {
+    font-size: 40px;
+    color: white;
+    font-weight: 100;
+}
+
+.footerBox {
+    position: relative;
+    width: 100%;
+    height: 270px;
+}
+
+.footerContainer {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    background-color: #006b41;
+}
+
+.footerBoxes {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footerBoxLabel {
+    font-size: 30px;
+    font-weight: 1000;
+    color: white;
+    margin-top: 20px;
+}
+
+.footerItems {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerItem {
+    font-size: 28px;
+    color: white;
+}
